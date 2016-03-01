@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5032E4B71C7FAC7800875013 /* CircleLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5032E4B61C7FAC7800875013 /* CircleLoad.swift */; };
 		50DA91151C7C10BE00ED2F34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DA91141C7C10BE00ED2F34 /* AppDelegate.swift */; };
 		50DA91171C7C10BE00ED2F34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DA91161C7C10BE00ED2F34 /* ViewController.swift */; };
 		50DA911A1C7C10BE00ED2F34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50DA91181C7C10BE00ED2F34 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		50DA911F1C7C10BE00ED2F34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50DA911D1C7C10BE00ED2F34 /* LaunchScreen.storyboard */; };
 		50DA912A1C7C10BE00ED2F34 /* LoadingLikeABossTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DA91291C7C10BE00ED2F34 /* LoadingLikeABossTests.swift */; };
 		50DA91351C7C10BE00ED2F34 /* LoadingLikeABossUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DA91341C7C10BE00ED2F34 /* LoadingLikeABossUITests.swift */; };
+		50DA91451C7C139300ED2F34 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DA91441C7C139300ED2F34 /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5032E4B61C7FAC7800875013 /* CircleLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLoad.swift; sourceTree = "<group>"; };
 		50DA91111C7C10BE00ED2F34 /* LoadingLikeABoss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoadingLikeABoss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50DA91141C7C10BE00ED2F34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50DA91161C7C10BE00ED2F34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		50DA91301C7C10BE00ED2F34 /* LoadingLikeABossUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadingLikeABossUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50DA91341C7C10BE00ED2F34 /* LoadingLikeABossUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingLikeABossUITests.swift; sourceTree = "<group>"; };
 		50DA91361C7C10BE00ED2F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50DA91441C7C139300ED2F34 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		50DA91131C7C10BE00ED2F34 /* LoadingLikeABoss */ = {
 			isa = PBXGroup;
 			children = (
+				50DA91441C7C139300ED2F34 /* CircleView.swift */,
 				50DA91141C7C10BE00ED2F34 /* AppDelegate.swift */,
 				50DA91161C7C10BE00ED2F34 /* ViewController.swift */,
+				5032E4B61C7FAC7800875013 /* CircleLoad.swift */,
 				50DA91181C7C10BE00ED2F34 /* Main.storyboard */,
 				50DA911B1C7C10BE00ED2F34 /* Assets.xcassets */,
 				50DA911D1C7C10BE00ED2F34 /* LaunchScreen.storyboard */,
@@ -256,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50DA91451C7C139300ED2F34 /* CircleView.swift in Sources */,
+				5032E4B71C7FAC7800875013 /* CircleLoad.swift in Sources */,
 				50DA91171C7C10BE00ED2F34 /* ViewController.swift in Sources */,
 				50DA91151C7C10BE00ED2F34 /* AppDelegate.swift in Sources */,
 			);
@@ -482,6 +490,7 @@
 				50DA913B1C7C10BE00ED2F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50DA913C1C7C10BE00ED2F34 /* Build configuration list for PBXNativeTarget "LoadingLikeABossTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +499,7 @@
 				50DA913E1C7C10BE00ED2F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50DA913F1C7C10BE00ED2F34 /* Build configuration list for PBXNativeTarget "LoadingLikeABossUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +508,7 @@
 				50DA91411C7C10BE00ED2F34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

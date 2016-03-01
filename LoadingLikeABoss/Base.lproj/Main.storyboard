@@ -1,25 +1,77 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoadingLikeABoss" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZW-5c-nKE">
+                                <rect key="frame" x="66" y="200" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H3d-a8-l9A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rI-E2-ihT">
+                                <rect key="frame" x="152" y="200" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HxD-5Y-2Fe"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36x-pX-AcG" customClass="CircleView" customModule="LoadingLikeABoss" customModuleProvider="target">
+                                <rect key="frame" x="56" y="64" width="128" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.93491522359084034" blue="0.92788383073362068" alpha="0.0" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4rI-E2-ihT" firstAttribute="baseline" secondItem="EZW-5c-nKE" secondAttribute="baseline" id="5XQ-lX-CS1"/>
+                            <constraint firstItem="EZW-5c-nKE" firstAttribute="top" secondItem="36x-pX-AcG" secondAttribute="bottom" constant="8" symbolic="YES" id="6tl-42-UrF"/>
+                            <constraint firstItem="36x-pX-AcG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N2R-xN-dJx"/>
+                            <constraint firstItem="36x-pX-AcG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TOE-HI-28U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4rI-E2-ihT" secondAttribute="trailing" constant="50" id="V79-UU-amy"/>
+                            <constraint firstItem="36x-pX-AcG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="aau-sD-y5R"/>
+                            <constraint firstItem="EZW-5c-nKE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="e2p-6d-MZk"/>
+                            <constraint firstItem="36x-pX-AcG" firstAttribute="trailing" secondItem="4rI-E2-ihT" secondAttribute="trailing" id="fQX-ZJ-h8b"/>
+                            <constraint firstItem="36x-pX-AcG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="h1G-jo-nTz"/>
+                            <constraint firstAttribute="bottom" secondItem="EZW-5c-nKE" secondAttribute="bottom" constant="20" symbolic="YES" id="h7U-lG-NGY"/>
+                            <constraint firstItem="36x-pX-AcG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="kXc-Oc-Cov"/>
+                            <constraint firstItem="36x-pX-AcG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="oEC-nl-Cf1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="36x-pX-AcG" secondAttribute="bottom" constant="121" id="pfW-Fx-KDt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="N2R-xN-dJx"/>
+                                <exclude reference="TOE-HI-28U"/>
+                                <exclude reference="aau-sD-y5R"/>
+                                <exclude reference="oEC-nl-Cf1"/>
+                                <exclude reference="pfW-Fx-KDt"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="250" height="250"/>
+                    <connections>
+                        <outlet property="circleLoad" destination="36x-pX-AcG" id="Xdv-sh-cXL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="278" y="339"/>
         </scene>
     </scenes>
 </document>
